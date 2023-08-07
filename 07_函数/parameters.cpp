@@ -34,7 +34,25 @@ bool isLonger(const string& str1,const string& str2)
 	return str1.size() > str2.size();
 }
 
-
+// 变量数组元素进行打印
+// int arr[] = int* arr 都是传递arr[0]的指针
+void printArray(const int arr[])
+{
+	
+}
+void printArray(const int* arr, int size)
+{
+	for (size_t i = 0; i < size; i++)
+	{
+		cout << "arr[" << i << "] = " << arr[i] << endl;
+	}
+}
+// 使用数组引用 int(&arr)[5] 
+void printArray(const int(&arr)[5])
+{
+	for(int num : arr)
+		cout << "num = " << num << endl;
+}
 int main()
 {
 	int n = 0;
@@ -53,4 +71,8 @@ int main()
 	string str1 = "hello", str2 = "world";
 	isLonger(str1, str2);
 	// isLonger("hello", "world");  // 使用常量引用才能进行字面量传递
+
+	int arr[5] = { 1,2,3,4,5 };
+	printArray(arr, size(arr));
+	printArray(arr);
 }

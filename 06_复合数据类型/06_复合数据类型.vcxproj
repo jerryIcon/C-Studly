@@ -127,13 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="pointer.cpp" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="list_node.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="reverse_linked.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

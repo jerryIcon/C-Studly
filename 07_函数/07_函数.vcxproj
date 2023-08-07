@@ -139,8 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="binary_search.cpp" />
     <ClCompile Include="copy_string.cpp" />
-    <ClCompile Include="parameters.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utils.h" />

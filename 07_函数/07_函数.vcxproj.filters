@@ -18,7 +18,7 @@
     <ClCompile Include="copy_string.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="parameters.cpp">
+    <ClCompile Include="binary_search.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
